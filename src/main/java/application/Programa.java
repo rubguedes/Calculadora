@@ -5,7 +5,7 @@
  */
 package application;
 
-import entities.Calculatora;
+import entities.Calcular;
 import gui.TelaCalculadoraController;
 
 /**
@@ -16,6 +16,25 @@ public class Programa {
     
     public static void main(String[] args) {
         
+        Calcular calc = new Calcular();
+        Calcular calc1 = new Calcular();
+        Calcular calc2 = new Calcular();
+        Calcular calc3 = new Calcular();
         
+        calc.soma(5, 4.59);
+        System.out.println(calc.getResultado());
+        System.out.println("");
+        
+        calc1.mediaAritmetica(4, 8, 16, 32, 64, 128, 256);
+        System.out.println(calc1.getResultado());
+        System.out.println("");
+        
+        calc2.subtracao(6, 1);
+        System.out.println(calc2.getResultado());
+        System.out.println("");
+        
+        calc3.divisao(15, 3);
+        System.out.println(calc3.getResultado());
+        System.out.println("");
     }
 }
