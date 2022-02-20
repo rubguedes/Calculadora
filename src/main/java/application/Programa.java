@@ -20,6 +20,7 @@ public class Programa {
         Calcular calc1 = new Calcular();
         Calcular calc2 = new Calcular();
         Calcular calc3 = new Calcular();
+        Calcular calc4 = new Calcular();
         
         calc.soma(5, 4.59);
         System.out.println(calc.getResultado());
@@ -35,6 +36,10 @@ public class Programa {
         
         calc3.divisao(15, 3);
         System.out.println(calc3.getResultado());
+        System.out.println("");
+        
+        calc4.multiplicacao(2, 2, 2, 2, 2);
+        System.out.println(calc4.getResultado());
         System.out.println("");
     }
 }

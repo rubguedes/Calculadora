@@ -74,4 +74,16 @@ public class Calcular {
         
         setResultado(result);
     }
+    
+    public void multiplicacao (double... valores) {
+        double soma = 1;
+        
+        for (int i = 0; i < valores.length; i++) {
+            soma = soma * valores[i];
+        }
+        
+        double result = soma;
+        
+        setResultado(result);
+    }
 }
