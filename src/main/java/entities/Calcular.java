@@ -19,8 +19,26 @@ package entities;
  */
 public class Calcular {
     private double resultado;
+    private boolean verdadeiro;
+    private String resultString;
 
     public Calcular() {
+    }
+
+    public String getResultString() {
+        return resultString;
+    }
+
+    public void setResultString(String resultString) {
+        this.resultString = resultString;
+    }
+
+    public boolean isVerdadeiro() {
+        return verdadeiro;
+    }
+
+    public void setVerdadeiro(boolean verdadeiro) {
+        this.verdadeiro = verdadeiro;
     }
 
     public double getResultado() {
@@ -86,4 +104,38 @@ public class Calcular {
         
         setResultado(result);
     }
+    
+    public void fatorial (int valor) {
+        int fatorial = valor;
+        int result = 1;
+        
+        while (fatorial > 1) {
+            result *= fatorial;
+            
+            fatorial--;
+        }
+        
+        setResultado(result);
+    }
+    
+    public void isPrimo (int valor) {
+        int cont = 0;
+        
+        for (int i = 1; i < valor; i++) {
+            
+            if (valor % i == 0) {
+                cont++;
+            }
+            
+        }
+        
+        if (cont > 2){
+            setVerdadeiro(true);
+        }
+        else {
+            setVerdadeiro(false);
+        }
+    }
+    
+    
 }

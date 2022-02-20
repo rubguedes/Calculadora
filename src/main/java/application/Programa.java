@@ -21,6 +21,8 @@ public class Programa {
         Calcular calc2 = new Calcular();
         Calcular calc3 = new Calcular();
         Calcular calc4 = new Calcular();
+        Calcular calc5 = new Calcular();
+        Calcular calc6 = new Calcular();
         
         calc.soma(5, 4.59);
         System.out.println(calc.getResultado());
@@ -40,6 +42,14 @@ public class Programa {
         
         calc4.multiplicacao(2, 2, 2, 2, 2);
         System.out.println(calc4.getResultado());
+        System.out.println("");
+        
+        calc5.fatorial(5);
+        System.out.println(calc5.getResultado());
+        System.out.println("");
+        
+        calc6.isPrimo(4);
+        System.out.println(calc6.isVerdadeiro());
         System.out.println("");
     }
 }
