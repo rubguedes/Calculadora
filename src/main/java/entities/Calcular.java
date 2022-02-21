@@ -148,4 +148,40 @@ public class Calcular {
         
         setResultado(result);
     }
+    
+    public void areaQuadrado (double lado) {
+        double result = lado * lado;
+        
+        setResultado(result);
+    }
+    
+    public void areaRetangulo (double base, double altura) {
+        double result = base * altura;
+        
+        setResultado(result);
+    }
+    
+    public void areaTriangulo (double base, double altura) {
+        double result = (base * altura) / 2;
+        
+        setResultado(result);
+    }
+    
+    public void areaCircunferencia (double raio) {
+        double result = Math.PI * Math.pow(raio, 2);
+        
+        setResultado(result);
+    }
+    
+    public void areaTrapezio (double bMaior, double bMenor, double altura) {
+        double result = ((bMaior + bMenor) * altura) / 2;
+        
+        setResultado(result);
+    }
+    
+    public void areaLosango (double dMaior, double dMenor) {
+        double result = (dMaior + dMenor) / 2;
+        
+        setResultado(result);
+    }
 }
