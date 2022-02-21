@@ -23,6 +23,8 @@ public class Programa {
         Calcular calc4 = new Calcular();
         Calcular calc5 = new Calcular();
         Calcular calc6 = new Calcular();
+        Calcular calc7 = new Calcular();
+        Calcular calc8 = new Calcular();
         
         calc.soma(5, 4.59);
         System.out.println(calc.getResultado());
@@ -50,6 +52,14 @@ public class Programa {
         
         calc6.isPrimo(4);
         System.out.println(calc6.isVerdadeiro());
+        System.out.println("");
+        
+        calc7.potenciacao(4, 2);
+        System.out.println(calc7.getResultado());
+        System.out.println("");
+        
+        calc8.raizQuadrada(125);
+        System.out.println(calc8.getResultado());
         System.out.println("");
     }
 }

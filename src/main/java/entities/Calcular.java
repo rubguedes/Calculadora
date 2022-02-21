@@ -137,5 +137,15 @@ public class Calcular {
         }
     }
     
+    public void potenciacao (double base, int expoente) {
+        double result = Math.pow(base, expoente);
+        
+        setResultado(result);
+    }
     
+    public void raizQuadrada (double valor) {
+        double result = Math.sqrt(valor);
+        
+        setResultado(result);
+    }
 }
